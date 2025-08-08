@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Elements Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+      color: #111;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: left;
+    }
+    form > * {
+      display: block;
+      margin-bottom: 10px;
+    }
+    nav a {
+      margin-right: 15px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    section, article, aside, footer, header, nav, main {
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Elements Demo Page</h1>
+    <p>This page showcases most HTML elements in action.</p>
+  </header>
+
+  <nav>
+    <a href="#text">Text</a>
+    <a href="#lists">Lists</a>
+    <a href="#media">Media</a>
+    <a href="#forms">Forms</a>
+    <a href="#table">Table</a>
+    <a href="#semantics">Semantic</a>
+    <a href="#misc">Misc</a>
+  </nav>
+
+  <main>
+
+    <section id="text">
+      <h2>Text Elements</h2>
+      <p>This is a <strong>strong</strong> and <em>emphasized</em> text. You can also use <u>underline</u>, <s>strikethrough</s>, <mark>highlight</mark>, <code>inline code</code>, <sub>sub</sub>, <sup>sup</sup>, and <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+      <blockquote cite="https://openai.com">
+        "AI will transform the world."
+      </blockquote>
+      <pre>
+function hello() {
+  alert("Hello World");
+}
+      </pre>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Wake up</li>
+        <li>Code</li>
+        <li>Sleep</li>
+      </ol>
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Structure of the web</dd>
+        <dt>CSS</dt>
+        <dd>Style of the web</dd>
+      </dl>
+    </section>
+
+    <section id="media">
+      <h2>Multimedia</h2>
+      <h3>Image</h3>
+      <img src="https://via.placeholder.com/300" alt="Placeholder Image" width="300" />
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video width="320" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Iframe</h3>
+      <iframe width="360" height="200" src="https://www.wikipedia.org" title="Wikipedia"></iframe>
+    </section>
+
+    <section id="forms">
+      <h2>Forms & Inputs</h2>
+      <form>
+        <label>Name: <input type="text" /></label>
+        <label>Email: <input type="email" /></label>
+        <label>Password: <input type="password" /></label>
+        <label>Age: <input type="number" /></label>
+        <label>Choose a file: <input type="file" /></label>
+        <label>Pick a date: <input type="date" /></label>
+        <label>Color: <input type="color" /></label>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" /> Male</label>
+        <label><input type="radio" name="gender" /> Female</label>
+
+        <label>Skills:</label>
+        <label><input type="checkbox" /> HTML</label>
+        <label><input type="checkbox" /> CSS</label>
+
+        <label>Message:</label>
+        <textarea></textarea>
+
+        <label>Dropdown:</label>
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Age</th><th>City</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Shikhar</td><td>20</td><td>Lucknow</td></tr>
+          <tr><td>Anjali</td><td>22</td><td>Delhi</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="semantics">
+      <h2>Semantic Elements</h2>
+      <article>
+        <h3>Article Title</h3>
+        <p>This is an article section with its own heading and paragraph.</p>
+      </article>
+
+      <aside>
+        <h3>Aside</h3>
+        <p>This is a sidebar note or related information.</p>
+      </aside>
+    </section>
+
+    <section id="misc">
+      <h2>Other Useful Elements</h2>
+
+      <h3>Progress</h3>
+      <progress value="70" max="100"></progress>
+
+      <h3>Meter</h3>
+      <meter value="0.8">80%</meter>
+
+      <h3>Canvas (empty)</h3>
+      <canvas width="300" height="100" style="border:1px solid #000;"></canvas>
+
+      <h3>Details & Summary</h3>
+      <details>
+        <summary>Click to expand</summary>
+        <p>This is hidden detail content.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shikhar's HTML Playground</p>
+  </footer>
+
+</body>
+</html>
